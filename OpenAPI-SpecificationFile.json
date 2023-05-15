@@ -28,14 +28,15 @@
                 "BALANCE_SHEET",
                 "CASH_FLOW",
                 "EARNINGS",
-                "EARNINGS_CALENDAR"
+                "EARNINGS_CALENDAR",
+                "NEWS_SENTIMENT"
               ]
             }
           },
           {
             "name": "symbol",
             "in": "query",
-            "required": true,
+            "required": false,
             "description": "The symbol of the equity you're interested in",
             "schema": {
               "type": "string"
@@ -62,6 +63,62 @@
                 "6month",
                 "12month"
               ]
+            }
+          },
+          {
+            "name": "tickers",
+            "in": "query",
+            "required": false,
+            "description": "The stock/crypto/forex symbols of your choice.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topics",
+            "in": "query",
+            "required": false,
+            "description": "The news topics of your choice.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "time_from",
+            "in": "query",
+            "required": false,
+            "description": "The start time of the news articles you are targeting, in YYYYMMDDTHHMM format.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "time_to",
+            "in": "query",
+            "required": false,
+            "description": "The end time of the news articles you are targeting, in YYYYMMDDTHHMM format.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "description": "The sort order of the news articles. By default, sort=LATEST. You can also set sort=EARLIEST or sort=RELEVANCE based on your use case.",
+            "schema": {
+              "type": "string",
+              "default": "LATEST"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "The number of matching results to return. By default, limit=50. You can also set limit=200 to output up to 200 results.",
+            "schema": {
+              "type": "integer",
+              "default": 50
             }
           }
         ],

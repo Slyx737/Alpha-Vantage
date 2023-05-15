@@ -38,6 +38,37 @@ The Alpha Vantage Plugin supports the following features:
 
 The plugin is invoked with the phrase 'use alpha_vantage to...'. For example, 'use alpha_vantage to fetch the income statement for IBM'.
 
+## News Sentiment (v1.01)
+You can now fetch market news and sentiment data related to specific topics or sectors. This feature uses the newsSentiment function of the Alpha Vantage API.
+
+To specify a topic, use the topics parameter followed by the topic of your choice. For instance, to fetch news related to the technology sector, you could use:
+
+`use alpha_vantage to get news sentiment for tickers=AAPL with topics=technology`
+
+Remember, you can specify multiple topics by separating them with a comma:
+
+`use alpha_vantage to get news sentiment for tickers=AAPL with topics=technology,ipo`
+
+This will fetch news articles that simultaneously cover technology and IPOs.
+
+Below is the full list of supported topics:
+
+- Blockchain: `blockchain`
+- Earnings: `earnings`
+- IPO: `ipo`
+- Mergers & Acquisitions: `mergers_and_acquisitions`
+- Financial Markets: `financial_markets`
+- Economy - Fiscal Policy (e.g., tax reform, government spending): `economy_fiscal`
+- Economy - Monetary Policy (e.g., interest rates, inflation): `economy_monetary`
+- Economy - Macro/Overall: `economy_macro`
+- Energy & Transportation: `energy_transportation`
+- Finance: `finance`
+- Life Sciences: `life_sciences`
+- Manufacturing: `manufacturing`
+- Real Estate & Construction: `real_estate`
+- Retail & Wholesale: `retail_wholesale`
+- Technology: `technology`
+
 ## Contribution
 
 Contributions are welcome! If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are always welcome.
