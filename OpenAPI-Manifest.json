@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Alpha Vantage Plugin",
+    "name_for_model": "alpha_vantage",
+    "description_for_human": "Plugin for fetching financial data from Alpha Vantage.",
+    "description_for_model": "Plugin for fetching financial data from Alpha Vantage. Use the phrase 'use alpha_vantage to...' to invoke the plugin.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://your_domain/openapi.json",
+        "is_user_authenticated": false
+    },
+    "logo_url": "https://your_domain/logo.png",
+    "contact_email": "support@your_domain.com",
+    "legal_info_url": "https://your_domain/legal"
+}

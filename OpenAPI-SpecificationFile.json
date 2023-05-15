@@ -1,0 +1,84 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Alpha Vantage API",
+    "description": "This is an API specification for the Alpha Vantage API, which provides various financial data.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://www.alphavantage.co/query"
+    }
+  ],
+  "paths": {
+    "/query": {
+      "get": {
+        "summary": "Fetches financial data",
+        "parameters": [
+          {
+            "name": "function",
+            "in": "query",
+            "required": true,
+            "description": "The function to be performed by the API",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "OVERVIEW",
+                "INCOME_STATEMENT",
+                "BALANCE_SHEET",
+                "CASH_FLOW",
+                "EARNINGS",
+                "EARNINGS_CALENDAR"
+              ]
+            }
+          },
+          {
+            "name": "symbol",
+            "in": "query",
+            "required": true,
+            "description": "The symbol of the equity you're interested in",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "apikey",
+            "in": "query",
+            "required": true,
+            "description": "Your Alpha Vantage API key",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "horizon",
+            "in": "query",
+            "required": false,
+            "description": "The time horizon for the EARNINGS_CALENDAR function",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "3month",
+                "6month",
+                "12month"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
