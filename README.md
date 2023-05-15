@@ -44,6 +44,7 @@ The Alpha Vantage Plugin supports the following features:
 - Fetching earnings calendar
 - Fetching currency exchange rates
 - Fetching daily, weekly, or monthly historical time series for a digital currency traded on a specific market
+- Fetching economic indicators such as Consumer Price Index (CPI), Inflation, and Treasury Yields
 
 ## Usage
 
@@ -52,6 +53,8 @@ The plugin is invoked with the phrase `use alpha_vantage to...`
 For example, `use alpha_vantage to fetch the income statement for IBM`. 
 
 Or, to retrieve daily historical data for a digital currency, you might say `use alpha_vantage to fetch the daily historical data for BTC traded in USD`.
+
+For economic indicators, you can use `use alpha_vantage to fetch CPI data.`
 
 ## News Sentiment (v1.01)
 You can now fetch market news and sentiment data related to specific topics or sectors. This feature uses the newsSentiment function of the Alpha Vantage API.
