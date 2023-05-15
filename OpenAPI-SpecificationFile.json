@@ -28,11 +28,15 @@
                 "BALANCE_SHEET",
                 "CASH_FLOW",
                 "EARNINGS",
-                "EARNINGS_CALENDAR",
-                "CURRENCY_EXCHANGE_RATE",
-                "DIGITAL_CURRENCY_DAILY",
-                "DIGITAL_CURRENCY_WEEKLY",
-                "DIGITAL_CURRENCY_MONTHLY"
+                "EARNINGS_CALENDAR", 
+                "CPI", 
+                "INFLATION",
+                "TREASURY_YIELD",
+                
+          "CURRENCY_EXCHANGE_RATE",
+          "DIGITAL_CURRENCY_DAILY",
+          "DIGITAL_CURRENCY_WEEKLY",
+          "DIGITAL_CURRENCY_MONTHLY" 
               ]
             }
           },
@@ -159,7 +163,37 @@
             "schema": {
               "type": "string"
             }
+          },
+                  {
+          "name": "function",
+          "in": "query",
+          "description": "The function of your choice. Either CPI, INFLATION, or TREASURY_YIELD",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "enum": ["CPI", "INFLATION", "TREASURY_YIELD"]
           }
+        },
+        {
+          "name": "interval",
+          "in": "query",
+          "description": "By default, interval=monthly. Strings monthly and semiannual are accepted for CPI, and daily, weekly, and monthly for TREASURY_YIELD.",
+          "required": false,
+          "schema": {
+            "type": "string",
+            "enum": ["monthly", "semiannual", "daily", "weekly"]
+          }
+        },
+        {
+          "name": "maturity",
+          "in": "query",
+          "description": "By default, maturity=10year. Strings 3month, 2year, 5year, 7year, 10year, and 30year are accepted. Only applicable for TREASURY_YIELD.",
+          "required": false,
+          "schema": {
+            "type": "string",
+            "enum": ["3month", "2year", "5year", "7year", "10year", "30year"]
+          }
+        }
         ],
         "responses": {
           "200": {
