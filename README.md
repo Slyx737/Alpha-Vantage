@@ -38,7 +38,9 @@ The Alpha Vantage Plugin supports the following features:
 
 ## Usage
 
-The plugin is invoked with the phrase 'use alpha_vantage to...'. For example, 'use alpha_vantage to fetch the income statement for IBM'. To retrieve daily historical data for a digital currency, you might say 'use alpha_vantage to fetch the daily historical data for BTC traded in USD'.
+The plugin is invoked with the phrase `use alpha_vantage to...`. For example, `use alpha_vantage to fetch the income statement for IBM`. 
+
+Or, to retrieve daily historical data for a digital currency, you might say `use alpha_vantage to fetch the daily historical data for BTC traded in USD`.
 
 ## News Sentiment (v1.01)
 You can now fetch market news and sentiment data related to specific topics or sectors. This feature uses the newsSentiment function of the Alpha Vantage API.
