@@ -25,6 +25,15 @@ To use this plugin, you'll need to update the following placeholders in the `plu
 
 ## Features
 
+Equities
+Get an overview, income statement, balance sheet, cash flow, earnings, and earnings calendar for a specific equity symbol.
+
+Cryptocurrencies
+Retrieve the daily, weekly, or monthly historical time series for a digital currency traded on a specific market.
+
+News Analysis Sentiment
+Fetch news articles based on certain topics, tickers, or timeframes, and analyze the sentiment of the articles.
+
 The Alpha Vantage Plugin supports the following features:
 
 - Fetching company overviews
