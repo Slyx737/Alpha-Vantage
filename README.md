@@ -1,3 +1,7 @@
+I apologize for the misunderstanding. Thank you for providing the existing README file. Here's an updated version that includes the new cryptocurrency features:
+
+---
+
 # Alpha Vantage Plugin for OpenAI ChatGPT
 
 This repository contains the OpenAPI specification and the plugin manifest for the Alpha Vantage Plugin for OpenAI's ChatGPT. This plugin allows ChatGPT users to fetch financial data from Alpha Vantage directly through the chat interface. 
@@ -33,10 +37,12 @@ The Alpha Vantage Plugin supports the following features:
 - Fetching cash flow data
 - Fetching earnings data
 - Fetching earnings calendar
+- Fetching currency exchange rates
+- Fetching daily, weekly, or monthly historical time series for a digital currency traded on a specific market
 
 ## Usage
 
-The plugin is invoked with the phrase 'use alpha_vantage to...'. For example, 'use alpha_vantage to fetch the income statement for IBM'.
+The plugin is invoked with the phrase 'use alpha_vantage to...'. For example, 'use alpha_vantage to fetch the income statement for IBM'. To retrieve daily historical data for a digital currency, you might say 'use alpha_vantage to fetch the daily historical data for BTC traded in USD'.
 
 ## News Sentiment (v1.01)
 You can now fetch market news and sentiment data related to specific topics or sectors. This feature uses the newsSentiment function of the Alpha Vantage API.
@@ -67,7 +73,7 @@ Below is the full list of supported topics:
 - Manufacturing: `manufacturing`
 - Real Estate & Construction: `real_estate`
 - Retail & Wholesale: `retail_wholesale`
-- Technology: `technology`
+- Technology:`technology`
 
 ## Contribution
 

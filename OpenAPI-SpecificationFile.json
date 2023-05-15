@@ -29,7 +29,10 @@
                 "CASH_FLOW",
                 "EARNINGS",
                 "EARNINGS_CALENDAR",
-                "NEWS_SENTIMENT"
+                "CURRENCY_EXCHANGE_RATE",
+                "DIGITAL_CURRENCY_DAILY",
+                "DIGITAL_CURRENCY_WEEKLY",
+                "DIGITAL_CURRENCY_MONTHLY"
               ]
             }
           },
@@ -37,7 +40,7 @@
             "name": "symbol",
             "in": "query",
             "required": false,
-            "description": "The symbol of the equity you're interested in",
+            "description": "The symbol of the equity you're interested in (used with equity-related functions).",
             "schema": {
               "type": "string"
             }
@@ -119,6 +122,42 @@
             "schema": {
               "type": "integer",
               "default": 50
+            }
+          },
+          {
+            "name": "from_currency",
+            "in": "query",
+            "required": false,  // Adjust as necessary
+            "description": "The currency you would like to get the exchange rate for.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "to_currency",
+            "in": "query",
+            "required": false,  // Adjust as necessary
+            "description": "The destination currency for the exchange rate.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "symbol",
+            "in": "query",
+            "required": false,  // Adjust as necessary
+            "description": "The digital/crypto currency of your choice (used with digital currency-related functions).",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "market",
+            "in": "query",
+            "required": false,  // Adjust as necessary
+            "description": "The exchange market of your choice.",
+            "schema": {
+              "type": "string"
             }
           }
         ],
