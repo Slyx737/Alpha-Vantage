@@ -22,7 +22,7 @@ To use this plugin, you'll need to update the following placeholders in the `plu
 
 ## Contributing
 
-We welcome contributions to improve this plugin. Please feel free to open issues or submit pull requests.
+We welcome contributions to improve this plugin. Please feel free to open issues or submit pull requests for this project.
 
 ## License
 
