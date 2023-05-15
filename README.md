@@ -38,7 +38,9 @@ The Alpha Vantage Plugin supports the following features:
 
 ## Usage
 
-The plugin is invoked with the phrase `use alpha_vantage to...`. For example, `use alpha_vantage to fetch the income statement for IBM`. 
+The plugin is invoked with the phrase `use alpha_vantage to...`
+
+For example, `use alpha_vantage to fetch the income statement for IBM`. 
 
 Or, to retrieve daily historical data for a digital currency, you might say `use alpha_vantage to fetch the daily historical data for BTC traded in USD`.
 
