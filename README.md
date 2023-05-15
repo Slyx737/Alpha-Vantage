@@ -1,7 +1,3 @@
-I apologize for the misunderstanding. Thank you for providing the existing README file. Here's an updated version that includes the new cryptocurrency features:
-
----
-
 # Alpha Vantage Plugin for OpenAI ChatGPT
 
 This repository contains the OpenAPI specification and the plugin manifest for the Alpha Vantage Plugin for OpenAI's ChatGPT. This plugin allows ChatGPT users to fetch financial data from Alpha Vantage directly through the chat interface. 
