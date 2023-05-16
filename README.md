@@ -7,15 +7,20 @@ Please note that this is an unofficial open-source project and is neither endors
 
 ## Files
 
-- `openapi_specification.json`: This file contains the OpenAPI specification that describes the Alpha Vantage API's endpoints and responses. 
+- `Plugin_Specification.json`: This file contains the OpenAPI specification that describes the Alpha Vantage API's endpoints and responses. 
 
-- `plugin_manifest.json`: This file is the plugin manifest that describes how OpenAI's ChatGPT should interact with the Alpha Vantage Plugin.
+- `Plugin_Manifest_Alpha_Vantage_Http.json`: This file is the plugin manifest that describes how OpenAI's ChatGPT should interact with the Alpha Vantage Plugin.
+
+- `Plugin_Manifest_Alpha_Vantage_Http.json`: This is the main manifest file that includes the HTTP service authentication necessary for the plugin to interact with the Alpha Vantage API. It's the file that you will be sending to Alpha Vantage for collaboration.
+  
+- `Unused Manifest Files`:  `Plugin_Manifest_NoAuth.json`: This is an alternative version of the manifest file, which does not include authentication. It is not currently in use for this project, but has been preserved for potential use in other projects where authentication may not be required. It is stored in the `Unused_Manifest_Files` directory to avoid confusion.
+
 
 ## Getting Started
 
-To use this plugin, you'll need to update the following placeholders in the `plugin_manifest.json` file:
+To use this plugin, you'll need to update the following placeholders in the `Plugin_Manifest_Alpha_Vantage_Http.json` file:
 
-- `https://your_domain/openapi.json`: Replace this with the URL where you host the `openapi_specification.json` file.
+- `https://your_domain/openapi.json`: Replace this with the URL where you host the `Plugin_Specification.json` file.
 
 - `https://your_domain/logo.png`: Replace this with the URL of the logo you want to use for this plugin.
 
