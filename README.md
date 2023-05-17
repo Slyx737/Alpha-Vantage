@@ -18,9 +18,9 @@ Please note that this is an unofficial open-source project and is neither endors
 
 ## Getting Started
 
-To use this plugin, you'll need to update the following placeholders in the `Plugin_Manifest_Alpha_Vantage_Http.json` file:
+To use this plugin, you'll need to update the following placeholders in the `ai-plugin.json` file:
 
-- `https://your_domain/openapi.json`: Replace this with the URL where you host the `Plugin_Specification.json` file.
+- `https://your_domain/openapi.json`: Replace this with the URL where you host the `OpenAPI_Plugin_Specification.json` file.
 
 - `https://your_domain/logo.png`: Replace this with the URL of the logo you want to use for this plugin.
 
@@ -30,25 +30,36 @@ To use this plugin, you'll need to update the following placeholders in the `Plu
 
 ## Features
 
-Equities
-Get an overview, income statement, balance sheet, cash flow, earnings, and earnings calendar for a specific equity symbol.
+### Equities
+- Get an overview, income statement, balance sheet, cash flow, earnings, and earnings calendar for a specific equity symbol.
 
-Cryptocurrencies
-Retrieve the daily, weekly, or monthly historical time series for a digital currency traded on a specific market.
+### Cryptocurrencies
+- Retrieve the daily, weekly, or monthly historical time series for a digital currency traded on a specific market.
 
-News Analysis Sentiment
-Fetch news articles based on certain topics, tickers, or timeframes, and analyze the sentiment of the articles.
+### Currency Exchange
+- Obtain currency exchange rates. You can ask for the currency you would like to get the exchange rate for, and the destination currency for the exchange rate
 
-The Alpha Vantage Plugin supports the following features:
+### News Analysis Sentiment
+- Fetch news articles based on certain topics, tickers, or timeframes, and analyze the sentiment of the articles.
+
+### The Alpha Vantage Plugin supports the following features:
 
 - Fetching company overviews
+  
 - Fetching income statements
+  
 - Fetching balance sheets
+  
 - Fetching cash flow data
+  
 - Fetching earnings data
+  
 - Fetching earnings calendar
+  
 - Fetching currency exchange rates
+  
 - Fetching daily, weekly, or monthly historical time series for a digital currency traded on a specific market
+  
 - Fetching economic indicators such as Consumer Price Index (CPI), Inflation, and Treasury Yields
 
 ## Usage
