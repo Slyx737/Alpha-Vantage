@@ -7,11 +7,11 @@ Please note that this is an unofficial open-source project and is neither endors
 
 ## Files
 
-- `Plugin_Specification.json`: This file contains the OpenAPI specification that describes the Alpha Vantage API's endpoints and responses.
+- `OpenAPI_Plugin_Specification.json`: This file contains the OpenAPI specification that describes the Alpha Vantage API's endpoints and responses.
   
-- `Plugin_Manifest_Alpha_Vantage_Http.json`: This file is the plugin manifest that describes how OpenAI's ChatGPT should interact with the Alpha Vantage Plugin.
+- `ai-plugin.json`: This file is the plugin manifest that describes how OpenAI's ChatGPT should interact with the Alpha Vantage Plugin.
 
-- `Plugin_Manifest_Alpha_Vantage_Http.json`: This is the main manifest file that includes the HTTP service authentication necessary for the plugin to interact with the Alpha Vantage API. It's the file that you will be sending to Alpha Vantage for collaboration.
+- `ai-plugin.json`: This is the main manifest file that includes the HTTP service authentication necessary for the plugin to interact with the Alpha Vantage API.
   
 - `Unused_Manifest_Files/Plugin_Manifest_NoAuth.json`: This is an alternative version of the manifest file, which does not include authentication. It is not currently in use for this project, but has been preserved for potential use in other projects where authentication may not be required. It is stored in the `Unused_Manifest_Files` directory to avoid confusion.
 
