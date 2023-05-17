@@ -37,7 +37,7 @@ To use this plugin, you'll need to update the following placeholders in the `ai-
 - Retrieve the daily, weekly, or monthly historical time series for a digital currency traded on a specific market.
 
 ### Currency Exchange
-- Obtain currency exchange rates. You can ask for the currency you would like to get the exchange rate for, and the destination currency for the exchange rate
+- Obtain currency exchange rates. You can ask for the currency you would like to get the exchange rate for, and the destination currency for the exchange rate.
 
 ### News Analysis Sentiment
 - Fetch news articles based on certain topics, tickers, or timeframes, and analyze the sentiment of the articles.
