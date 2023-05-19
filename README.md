@@ -25,16 +25,15 @@ Before you can use the Alpha Vantage Plugin, you will need to obtain an API key 
 1. Visit the [Alpha Vantage website](https://www.alphavantage.co/support/#api-key).
 2. Follow the instructions to sign up for a free API key.
 
-### Step 2: Configure the Plugin
+Step 2: Configure the Plugin
+After you've installed the plugin and start to use it for the first time, you will be prompted to enter your Alpha Vantage API key. For example, you might start by saying use alpha_vantage to fetch the income statement for IBM.
 
-Once you have your API key, you will need to configure the plugin to use it.
+You will be prompted by the system to enter your Alpha Vantage API key. Provide the key at this prompt.
 
-(Here, provide the specific steps they should take to enter the API key into the correct place in your code or system. Depending on how your plugin is set up, this might involve modifying a configuration file, setting an environment variable, or something else.)
+Note: This key is stored securely and is used to make requests to the Alpha Vantage API on your behalf.
 
-### Security Best Practices
-
-Your API key is what links your plugin to your Alpha Vantage account, so it's important to keep it secure. Never share your API key in public places (such as public GitHub repositories or public forum posts). If you believe your API key has been compromised, you can regenerate it from the Alpha Vantage website.
-
+Security Best Practices
+It's important to keep your API key secure as it links your plugin to your Alpha Vantage account. Do not share your API key in public spaces like public GitHub repositories or public forum posts. If you suspect that your API key might have been compromised, you can always generate a new one from the Alpha Vantage website.
 
 ## Getting Started (Dev Note - Delete This "Getting Started" Section Before Deploying)
 
