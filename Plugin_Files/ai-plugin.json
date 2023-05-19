@@ -8,7 +8,7 @@
         "type": "service_http",
         "authorization_type": "Bearer",
         "verification_tokens": {
-            "alpha_vantage": "your_alpha_vantage_api_key"
+            "alpha_vantage": "sample_key_for_testing"
         }
     },
     "api": {
