@@ -15,8 +15,7 @@ Please note that this is an unofficial open-source project and is neither endors
   
 - `Unused_Manifest_Files/Plugin_Manifest_NoAuth.json`: This is an alternative version of the manifest file, which does not include authentication. It is not currently in use for this project, but has been preserved for potential use in other projects where authentication may not be required. It is stored in the `Unused_Manifest_Files` directory to avoid confusion.
 
-
-## Setting Up API Key (Users - Delete This Message)
+## Setting Up API Key
 
 Before you can use the Alpha Vantage Plugin, you will need to obtain an API key from Alpha Vantage.
 
@@ -25,7 +24,7 @@ Before you can use the Alpha Vantage Plugin, you will need to obtain an API key 
 1. Visit the [Alpha Vantage website](https://www.alphavantage.co/support/#api-key).
 2. Follow the instructions to sign up for a free API key.
 
-Step 2: Configure the Plugin
+### Step 2: Configure the Plugin
 After you've installed the plugin and start to use it for the first time, you will be prompted to enter your Alpha Vantage API key. For example, you might start by saying use alpha_vantage to fetch the income statement for IBM.
 
 You will be prompted by the system to enter your Alpha Vantage API key. Provide the key at this prompt.
