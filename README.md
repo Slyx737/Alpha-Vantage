@@ -27,7 +27,7 @@ Before you can use the Alpha Vantage Plugin, you will need to obtain an API key 
 ### Step 2: Configure the Plugin
 After you've installed the plugin and start to use it for the first time, you will be prompted to enter your Alpha Vantage API key. For example, you might start by saying `use alpha_vantage to fetch the income statement for IBM.`
 
-You will be prompted by the system to enter your Alpha Vantage API key. Provide the key at this prompt.
+You will be prompted by ChatGPT to enter your Alpha Vantage API key. Provide the key at this prompt.
 
 Note: This key is stored securely and is used to make requests to the Alpha Vantage API on your behalf.
 
