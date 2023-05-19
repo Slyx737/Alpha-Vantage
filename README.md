@@ -16,7 +16,27 @@ Please note that this is an unofficial open-source project and is neither endors
 - `Unused_Manifest_Files/Plugin_Manifest_NoAuth.json`: This is an alternative version of the manifest file, which does not include authentication. It is not currently in use for this project, but has been preserved for potential use in other projects where authentication may not be required. It is stored in the `Unused_Manifest_Files` directory to avoid confusion.
 
 
-## Getting Started
+## Setting Up API Key (Users - Delete This Message)
+
+Before you can use the Alpha Vantage Plugin, you will need to obtain an API key from Alpha Vantage.
+
+### Step 1: Get Your API Key
+
+1. Visit the [Alpha Vantage website](https://www.alphavantage.co/support/#api-key).
+2. Follow the instructions to sign up for a free API key.
+
+### Step 2: Configure the Plugin
+
+Once you have your API key, you will need to configure the plugin to use it.
+
+(Here, provide the specific steps they should take to enter the API key into the correct place in your code or system. Depending on how your plugin is set up, this might involve modifying a configuration file, setting an environment variable, or something else.)
+
+### Security Best Practices
+
+Your API key is what links your plugin to your Alpha Vantage account, so it's important to keep it secure. Never share your API key in public places (such as public GitHub repositories or public forum posts). If you believe your API key has been compromised, you can regenerate it from the Alpha Vantage website.
+
+
+## Getting Started (Dev Note - Delete This "Getting Started" Section Before Deploying)
 
 To use this plugin, you'll need to update the following placeholders in the `ai-plugin.json` file:
 
@@ -27,6 +47,8 @@ To use this plugin, you'll need to update the following placeholders in the `ai-
 - `support@your_domain.com`: Replace this with the contact email for support related to this plugin.
 
 - `https://your_domain/legal`: Replace this with the URL where you host the legal information related to this plugin.
+
+(~ ~ ~ Only Delete To This Line ~ ~ ~)
 
 ## Features
 
