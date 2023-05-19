@@ -31,7 +31,7 @@ You will be prompted by ChatGPT to enter your Alpha Vantage API key. Provide the
 
 Note: This key is stored securely and is used to make requests to the Alpha Vantage API on your behalf.
 
-Security Best Practices
+### Security Best Practices
 It's important to keep your API key secure as it links your plugin to your Alpha Vantage account. Do not share your API key in public spaces like public GitHub repositories or public forum posts. If you suspect that your API key might have been compromised, you can always generate a new one from the Alpha Vantage website.
 
 ## Getting Started (Dev Note - Delete This "Getting Started" Section Before Deploying)
