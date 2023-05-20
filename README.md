@@ -1,28 +1,28 @@
-# Alpha Vantage Plugin for OpenAI ChatGPT
+# Alpha Vantage Financial Data Interface
 
-This repository contains the OpenAPI specification and the plugin manifest for the Alpha Vantage Plugin for OpenAI's ChatGPT. This plugin allows ChatGPT users to fetch financial data from Alpha Vantage directly through the chat interface. 
+This repository contains the OpenAPI specification and the manifest for the Alpha Vantage Financial Data Interface. This interface allows users to fetch financial data from Alpha Vantage directly through a conversational interface.
 
 ## Disclaimer
-Please note that this is an unofficial open-source project and is neither endorsed nor owned by Alpha Vantage Inc. This plugin is developed independently and Alpha Vantage Inc. bears no responsibility for it.
+This is an unofficial open-source project and is neither endorsed nor owned by Alpha Vantage Inc. This interface is developed independently and Alpha Vantage Inc. bears no responsibility for it.
 
 ## Files
 
-- `OpenAPI_Plugin_Specification.json`: This file contains the OpenAPI specification that describes the Alpha Vantage API's endpoints and responses.
+- `OpenAPI_Plugin_Specification.json`: Contains the OpenAPI specification that describes the Alpha Vantage API's endpoints and responses.
   
-- `ai-plugin.json`: This file is the plugin manifest that describes how OpenAI's ChatGPT should interact with the Alpha Vantage Plugin.
+- `ai-interface.json`: Describes how the AI should interact with the Alpha Vantage Interface.
 
-- `ai-plugin.json`: This is the main manifest file that includes the HTTP service authentication necessary for the plugin to interact with the Alpha Vantage API.
+- `ai-interface.json`: This is the main manifest file that includes the HTTP service authentication necessary for the interface to interact with the Alpha Vantage API.
   
-- `Unused_Manifest_Files/Plugin_Manifest_NoAuth.json`: This is an alternative version of the manifest file, which does not include authentication. It is not currently in use for this project, but has been preserved for potential use in other projects where authentication may not be required. It is stored in the `Unused_Manifest_Files` directory to avoid confusion.
+- `Unused_Manifest_Files/Interface_Manifest_NoAuth.json`: An alternative version of the manifest file, which does not include authentication. It is not currently in use for this project, but has been preserved for potential use in other projects where authentication may not be required.
 
 ## Setting Up API Key
-
 Before you can use the Alpha Vantage Plugin, you will need to obtain an API key from Alpha Vantage.
 
 ### Step 1: Get Your API Key
 
-1. Visit the [Alpha Vantage website](https://www.alphavantage.co/support/#api-key).
-2. Follow the instructions to sign up for a free API key.
+1. Visit the [Alpha Vantage website](https://www.alphavantage.co).
+   
+2. Follow the instructions on the website to sign up for a [free API key](https://www.alphavantage.co/support/#api-key).
 
 ### Step 2: Configure the Plugin
 After you've installed the plugin and start to use it for the first time, you will be prompted to enter your Alpha Vantage API key. For example, you might start by saying `use alpha_vantage to fetch the income statement for IBM.`
@@ -31,22 +31,20 @@ You will be prompted by ChatGPT to enter your Alpha Vantage API key. Provide the
 
 Note: This key is stored securely and is used to make requests to the Alpha Vantage API on your behalf.
 
-### Security Best Practices
-It's important to keep your API key secure as it links your plugin to your Alpha Vantage account. Do not share your API key in public spaces like public GitHub repositories or public forum posts. If you suspect that your API key might have been compromised, you can always generate a new one from the Alpha Vantage website.
+## Security Best Practices
+It's important to keep your API key secure as it links your plugin to your Alpha Vantage account. Do not share your API key in public spaces like public GitHub repositories or public forum posts. If you suspect that your API key might have been compromised, you can always generate a new one from the Alpha Vantage website
 
-## Getting Started (Dev Note - Delete This "Getting Started" Section Before Deploying)
+## Getting Started
 
-To use this plugin, you'll need to update the following placeholders in the `ai-plugin.json` file:
+To use this interface, you'll need to update the placeholders in the `ai-interface.json` file:
 
 - `https://your_domain/openapi.json`: Replace this with the URL where you host the `OpenAPI_Plugin_Specification.json` file.
 
-- `https://your_domain/logo.png`: Replace this with the URL of the logo you want to use for this plugin.
+- `https://your_domain/logo.png`: Replace this with the URL of the logo you want to use for this interface.
 
-- `support@your_domain.com`: Replace this with the contact email for support related to this plugin.
+- `support@your_domain.com`: Replace this with the contact email for support related to this interface.
 
-- `https://your_domain/legal`: Replace this with the URL where you host the legal information related to this plugin.
-
-(~ ~ ~ Only Delete To This Line ~ ~ ~)
+- `https://your_domain/legal`: Replace this with the URL where you host the legal information related to this interface.
 
 ## Features
 
@@ -129,4 +127,5 @@ Contributions are welcome! If you'd like to contribute, please fork the reposito
 
 ## License
 
-This project is licensed under the MIT License - see the [[LICENSE]](https://github.com/Slyx737/Alpha-Vantage-ChatGPT-Plugin/blob/main/LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
