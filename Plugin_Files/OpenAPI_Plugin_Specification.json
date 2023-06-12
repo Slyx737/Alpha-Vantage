@@ -14,7 +14,7 @@
     "/query": {
       "get": {
         "summary": "Fetches financial data",
-        "description": "Fetches financial data based on the specified function and symbol. The function can be one of 'OVERVIEW', 'INCOME_STATEMENT', 'BALANCE_SHEET', or 'CASH_FLOW'. The symbol should be the symbol of the equity you're interested in. The model should invoke this operation when the user requests financial data related to these functions and provides a valid equity symbol.",
+        "description": "Makes a GET request to the '/query' endpoint with the specified 'function' and 'symbol' parameters. The 'function' parameter should be one of 'OVERVIEW', 'INCOME_STATEMENT', 'BALANCE_SHEET', or 'CASH_FLOW', and the 'symbol' parameter should be the symbol of the equity of interest. The model should invoke this operation by passing the desired function and equity symbol as parameters when the user requests specific financial data.",
         "parameters": [
           {
             "name": "function",
