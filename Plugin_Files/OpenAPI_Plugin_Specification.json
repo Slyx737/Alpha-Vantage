@@ -14,7 +14,7 @@
     "/query": {
       "get": {
         "summary": "Fetches financial data",
-        "description": "Makes a GET request to the '/query' endpoint with the specified 'function' and 'symbol' parameters. The 'function' parameter should be one of 'OVERVIEW', 'INCOME_STATEMENT', 'BALANCE_SHEET', or 'CASH_FLOW', and the 'symbol' parameter should be the symbol of the equity of interest. The model should invoke this operation by passing the desired function and equity symbol as parameters when the user requests specific financial data.",
+        "description": "Invokes the 'query' function of the Alpha Vantage API. The 'query' function makes a GET request to the '/query' endpoint with the specified 'function' and 'symbol' parameters. The 'function' parameter should be one of 'OVERVIEW', 'INCOME_STATEMENT', 'BALANCE_SHEET', or 'CASH_FLOW', and the 'symbol' parameter should be the symbol of the equity of interest." The model should invoke this operation by passing the desired function and equity symbol as parameters when the user requests specific financial data.",
         "parameters": [
           {
             "name": "function",
