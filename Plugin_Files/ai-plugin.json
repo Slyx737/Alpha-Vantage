@@ -3,7 +3,7 @@
     "name_for_human": "Alpha Vantage Plugin",
     "name_for_model": "alpha_vantage",
     "description_for_human": "Plugin for fetching financial data from Alpha Vantage.",
-  "description_for_model": "Plugin for fetching financial data from Alpha Vantage. The plugin provides a 'query' function that supports four main operations: OVERVIEW, INCOME_STATEMENT, BALANCE_SHEET, and CASH_FLOW. Each operation requires the symbol of the equity of interest. The model should use the 'query' function when the user requests financial data related to these operations and provides a valid equity symbol.",
+  "description_for_model": "Plugin for fetching financial data from Alpha Vantage. To invoke the plugin correctly, the model must provide both the 'function' (e.g., 'OVERVIEW', 'INCOME_STATEMENT', 'BALANCE_SHEET', or 'CASH_FLOW') and 'symbol' parameters in the request. Omitting either parameter will result in an error. Ensure both parameters are included to fetch the desired financial data.",
   "auth": {
         "type": "service_http",
         "authorization_type": "Bearer",
